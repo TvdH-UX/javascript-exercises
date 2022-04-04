@@ -4,7 +4,9 @@
 // Return celsius
 
 const ftoc = function(fahrenheit) {
-
+  let celsius = ((fahrenheit - 32) * (5/9));
+  roundedCelsius = Math.round(celsius * 10) / 10;
+  return roundedCelsius;
 };
 
 // Take celsius temperature
