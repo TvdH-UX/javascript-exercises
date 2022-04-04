@@ -10,8 +10,10 @@
 const sumAll = function(num1, num2) {
     sum = num1;
     numbersBetween = [];
-    if (num1 < 0 || num2 < 0){
-        return "ERROR"
+    let typeNum1 = typeof num1;
+    let typeNum2 = typeof num2;
+    if (num1 < 0 || num2 < 0 || typeNum1 != "number" || typeNum2 != "number"){
+        return "ERROR";
     } else {
         if (num1 < num2){
             for (let i = num1 + 1; i <= num2; i++){
