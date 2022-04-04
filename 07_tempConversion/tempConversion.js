@@ -15,7 +15,9 @@ const ftoc = function(fahrenheit) {
 // Return fahrenheit
 
 const ctof = function(celsius) {
-
+  let fahrenheit = (celsius * (9/5) + 32);
+  roundedFahrenheit = Math.round(fahrenheit * 10) / 10;
+  return roundedFahrenheit;
 };
 
 // Do not edit below this line
