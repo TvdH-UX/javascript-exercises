@@ -1,8 +1,18 @@
-const ftoc = function() {
+// Take fahrenheit temperature
+// Apply conversion
+// Round down to one decimal
+// Return celsius
+
+const ftoc = function(fahrenheit) {
 
 };
 
-const ctof = function() {
+// Take celsius temperature
+// Apply conversion
+// Round down to one decimal
+// Return fahrenheit
+
+const ctof = function(celsius) {
 
 };
 
