@@ -27,8 +27,18 @@ const power = function(number1, number2) {
 	return number1 ** number2;
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  let result = number;
+	if (number <= 1){
+    return 1;
+  } else {
+    for (let newNumber = (number - 1); newNumber > 1; newNumber--){
+      console.log("newnumber:" + newNumber);
+      result *= newNumber;
+      console.log("result: " + result)
+    }
+  }
+  return result;
 };
 
 // Do not edit below this line
