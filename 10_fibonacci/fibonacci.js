@@ -8,7 +8,6 @@ const fibonacci = function(number) {
                 newArray.push(1);
             } else {
                 newArray.push(newArray[newArray.length - 1] + newArray[newArray.length - 2]);
-                console.log(newArray);
             }
         }
         return newArray[newArray.length - 1];
