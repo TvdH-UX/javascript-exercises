@@ -6,12 +6,16 @@
 // Return the person object
 
 const findTheOldest = function(array) {
-    const oldestPerson = array.reduce((oldest, person) => {
-        const lifeSpan = person.yearOfDeath - person.yearOfBirth;
-        console.log(person);
-        console.log(lifeSpan);     
-    }, 0)
+    return array.reduce((oldest, person) => {
+        const oldestAge = (oldest.yearOfDeath - oldest.yearOfBirth);
+        const currentAge = (person.yearOfDeath - person.yearOfBirth);
+        return oldestAge < currentAge ? person : oldest;
+    })
 };
+
+const getAge = function(birth, death){
+    
+}
 
 // const findTheOldest = function(array) {
 //     const oldestPerson = array.reduce((oldest, person) => {
